@@ -2,10 +2,10 @@ import React from "react";
 
 class CalcButton extends React.Component {
 	handleClick = () => {
-		//	console.log(this.props);
+		console.log(this.props);
 		this.props.handleClick(this.props.value);
 	};
-	render() {
+	render(props) {
 		return (
 			<button
 				className={this.props.className}
